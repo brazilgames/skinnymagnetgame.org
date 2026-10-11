@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>it has uh uh a little skiny magnet</title>
+
+    <!-- Page Favicon / Icon -->
+    <link rel="icon" type="image/png" href="file:///C:/Users/nicho/OneDrive/Documents/Pictures/cursor%20thing.png">
+
+    <!-- Tailwind CSS for smooth layout -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Force Comic Sans font across the entire webpage */
+        body, *, button, a, iframe, div, p, span, h1, h2, h3 {
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif !important;
+        }
+
+        /* Set custom cursor with local fallback */
+        html, body, *, button, a, iframe {
+            cursor: url("file:///C:/Users/nicho/OneDrive/Documents/Pictures/cursor%20thing.png"), auto !important;
+        }
+
+        /* White to black gradient background for whole page */
+        .page-gradient {
+            background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #4a4a4a 85%, #000000 100%);
+            min-height: 100vh;
+        }
+
+        /* Container styling for Scratch player */
+        .embed-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 680px;
+            aspect-ratio: 485 / 402;
+            margin: 0 auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            background-color: #000;
+        }
+
+        .embed-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body class="page-gradient text-gray-900 flex flex-col min-h-screen">
+
+    <!-- Top Bar in light blue (#87ceeb) -->
+    <header class="w-full bg-[#87ceeb] text-gray-900 py-3 px-6 shadow-md border-b-2 border-sky-300 flex flex-wrap justify-between items-center gap-4">
+        <h1 class="text-xl md:text-2xl font-bold tracking-wide">it has uh uh a little skiny magnet</h1>
+        <a href="https://scratch.mit.edu/users/BrazilTheScratcher" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="bg-white hover:bg-yellow-200 text-gray-800 font-bold py-2 px-4 rounded-xl shadow border border-gray-300 transition-all duration-200 hover:scale-105 active:scale-95 text-sm md:text-base inline-flex items-center gap-2">
+            <span>🎮</span>
+            <span>Check out creator's other games</span>
+        </a>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow max-w-4xl w-full mx-auto p-4 md:p-8 flex flex-col gap-6">
+
+        <!-- Scratch Game Frame -->
+        <section class="w-full flex justify-center py-2">
+            <div class="embed-wrapper">
+                <iframe src="https://scratch.mit.edu/projects/1385382674/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Instructions Section -->
+        <section class="bg-sky-50 border-2 border-sky-200 rounded-2xl p-5 shadow-sm">
+            <h2 class="text-xl font-bold text-sky-900 mb-2">Instructions</h2>
+            <p class="whitespace-pre-line text-lg text-gray-800 font-semibold leading-relaxed">instrutctions: wasd or arrow keys to move
+e to use a magnetsoda</p>
+        </section>
+
+        <!-- Warning Section -->
+        <section class="bg-red-50 border-2 border-red-300 rounded-2xl p-5 shadow-sm">
+            <div class="flex items-start gap-3">
+                <span class="text-2xl">⚠️</span>
+                <p class="text-lg font-bold text-red-700 leading-snug">Warning: make sure to always click green flag 2 times after getting all magnets or the red effect will still be there after restarting, or the exits will be visible</p>
+            </div>
+        </section>
+
+        <!-- Plot Section -->
+        <section class="bg-yellow-50 border-2 border-yellow-200 rounded-2xl p-5 shadow-sm">
+            <h2 class="text-xl font-bold text-yellow-900 mb-2">Plot</h2>
+            <p class="text-lg text-gray-800 font-semibold leading-relaxed">plot: find all 9 magnets, and get all 3 exits afterwards while being chased by crazy lady</p>
+        </section>
+
+        <!-- Update Logs Section -->
+        <section class="bg-white/90 border-2 border-gray-300 rounded-2xl p-5 shadow-sm mb-12">
+            <h2 class="text-xl font-bold text-gray-900 mb-3">Update Logs</h2>
+            <div class="text-base md:text-lg text-gray-800 space-y-2 font-medium">
+                <p class="font-bold text-indigo-700">upd logs:</p>
+                <p class="pl-2 border-l-4 border-indigo-400">(V1) 10/1/2026: Release</p>
+                <p class="pl-2 border-l-4 border-indigo-400">(V2) 10/3/2026: Added 2 new modes (Speed Mode and Large Maze Mode), and added chase sound</p>
+                <p class="pl-2 border-l-4 border-indigo-400">(V3) Added 1 new page with 2 modes: M A G N E T and Body Swap mode. We also added a better skinny magnet and exit counter. We also fixed hitbox bugs in Large Maze Mode, and added 8 new opening quotes</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bottom Footer -->
+    <footer class="w-full text-center py-6 text-white/70 text-sm">
+        <p>it has uh uh a little skiny magnet &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
